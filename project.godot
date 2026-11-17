@@ -1,0 +1,57 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Toxic Wasteland: Survive & Recycle"
+run/main_scene="res://GameEntry.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+UI="*res://Script/UI.gd"
+InputSetup="*res://Script/InputSetup.gd"
+Platform="*res://Script/PlatformManager.gd"
+InputHub="*res://Script/InputManager.gd"
+Art="*res://Script/Art.gd"
+Sfx="*res://Script/Sfx.gd"
+Music="*res://Script/Music.gd"
+ItemDB="*res://Script/ItemDB.gd"
+Economy="*res://Script/EconomyManager.gd"
+Inventory="*res://Script/InventoryManager.gd"
+Garbage="*res://Script/GarbageManager.gd"
+Pollution="*res://Script/PollutionManager.gd"
+Sorting="*res://Script/WasteSortingManager.gd"
+Shop="*res://Script/ShopManager.gd"
+DayNight="*res://Script/DayNightManager.gd"
+Quests="*res://Script/QuestManager.gd"
+Combat="*res://Script/CombatManager.gd"
+GameManager="*res://Script/GameManager.gd"
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=270
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_2d=2

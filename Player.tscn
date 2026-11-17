@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Script/PlayerController.gd" id="1_player"]
+[ext_resource type="PackedScene" path="res://Weapon.tscn" id="2_weapon"]
+[ext_resource type="PackedScene" path="res://Equipment.tscn" id="3_equip"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_body"]
+radius = 5.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+motion_mode = 1
+script = ExtResource("1_player")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(1.1, 0.9)
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -21)
+scale = Vector2(0.13, 0.13)
+
+[node name="Swing" type="Sprite2D" parent="."]
+visible = false
+hframes = 3
+z_index = 2
+
+[node name="Equipment" parent="." instance=ExtResource("3_equip")]
+z_index = -1
+
+[node name="Weapon" parent="." instance=ExtResource("2_weapon")]
+z_index = 2
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_body")

@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# exported builds / packaged downloads
+build/
+dist/
+
+# local Android SDK used for exports (not part of the game)
+.android-sdk/
+
+# release signing key - never commit
+keystore/

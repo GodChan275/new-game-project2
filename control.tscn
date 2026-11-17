@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://ccjrpgghx7qap"]
+
+[ext_resource type="Texture2D" uid="uid://crsyuv4fvk4lf" path="res://Assets/image/Main/MAIN1.png" id="1_eh0v1"]
+[ext_resource type="Texture2D" uid="uid://cin7268jm7wyd" path="res://Assets/image/Main/CREDIT.png" id="2_am1vj"]
+[ext_resource type="Texture2D" uid="uid://bc8dnbf7uxb4a" path="res://Assets/image/Main/NEW GAME.png" id="3_g31lc"]
+[ext_resource type="Texture2D" uid="uid://dqijsotkm5fxp" path="res://Assets/image/NEW GAMEH.png" id="4_knq72"]
+[ext_resource type="Texture2D" uid="uid://0wf5s3cxt3j5" path="res://Assets/image/Main/RETURN.png" id="5_xvdhi"]
+[ext_resource type="Texture2D" uid="uid://dwigbqbjek31m" path="res://Assets/image/Main/RETURN copy.png" id="6_oq4si"]
+[ext_resource type="Texture2D" uid="uid://1jvoq77lqb5x" path="res://Assets/image/Main/TUTORIALS-1.png" id="7_m4egf"]
+[ext_resource type="Texture2D" uid="uid://qwr27ofigm5m" path="res://Assets/image/Main/TUTORIALS.png" id="8_pi4e7"]
+[ext_resource type="Texture2D" uid="uid://bf2fufxqj3g33" path="res://Assets/image/Main/SETTING.png" id="9_kuuv8"]
+[ext_resource type="Texture2D" uid="uid://dnsxjfmjyy5sv" path="res://Assets/image/Main/SETTING copy.png" id="10_ou021"]
+[ext_resource type="Texture2D" uid="uid://caxr66hh2y7v0" path="res://Assets/image/Main/QUIT.png" id="11_3fl80"]
+[ext_resource type="Texture2D" uid="uid://1eybxr6wlncl" path="res://Assets/image/Main/QUIT copy.png" id="12_8jbwv"]
+
+[node name="Control" type="Control" unique_id=1858627162]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1025077630]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 269.0
+texture = ExtResource("1_eh0v1")
+expand_mode = 1
+
+[node name="CREDIT" type="TextureButton" parent="TextureRect" unique_id=499284731]
+layout_mode = 0
+offset_left = 363.99997
+offset_top = 118.0
+offset_right = 766.0001
+offset_bottom = 257.0
+rotation = 0.06669261
+scale = Vector2(0.27894765, 0.26261312)
+texture_normal = ExtResource("2_am1vj")
+
+[node name="NEWGAME" type="TextureButton" parent="TextureRect" unique_id=2104751175]
+layout_mode = 0
+offset_left = 244.00002
+offset_top = 4.0
+offset_right = 960.0
+offset_bottom = 135.0
+rotation = 0.011163667
+scale = Vector2(0.22913833, 0.26294568)
+texture_normal = ExtResource("3_g31lc")
+texture_hover = ExtResource("4_knq72")
+stretch_mode = 4
+
+[node name="RETURN" type="TextureButton" parent="TextureRect" unique_id=1546816461]
+layout_mode = 0
+offset_left = 276.9282
+offset_top = 34.0
+offset_right = 932.9282
+offset_bottom = 186.0
+rotation = 0.02840367
+scale = Vector2(0.23403658, 0.21501935)
+texture_normal = ExtResource("5_xvdhi")
+texture_hover = ExtResource("6_oq4si")
+
+[node name="TUTORIALS" type="TextureButton" parent="TextureRect" unique_id=327632762]
+layout_mode = 0
+offset_left = 304.00003
+offset_top = 61.000004
+offset_right = 916.0
+offset_bottom = 214.0
+rotation = 0.036691003
+scale = Vector2(0.24184488, 0.24640203)
+texture_normal = ExtResource("7_m4egf")
+texture_hover = ExtResource("8_pi4e7")
+
+[node name="SETTING" type="TextureButton" parent="TextureRect" unique_id=1399364665]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 92.0
+offset_right = 842.0
+offset_bottom = 228.0
+rotation = 0.043238238
+scale = Vector2(0.27289662, 0.2398556)
+texture_normal = ExtResource("9_kuuv8")
+texture_hover = ExtResource("10_ou021")
+
+[node name="QUIT" type="TextureButton" parent="TextureRect" unique_id=493308252]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 150.99998
+offset_right = 704.0
+offset_bottom = 288.0
+rotation = 0.07042868
+scale = Vector2(0.27951926, 0.23796654)
+texture_normal = ExtResource("11_3fl80")
+texture_hover = ExtResource("12_8jbwv")

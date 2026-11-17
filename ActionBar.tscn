@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Script/ActionBar.gd" id="1_bar"]
+
+[node name="ActionBar" type="Control"]
+script = ExtResource("1_bar")

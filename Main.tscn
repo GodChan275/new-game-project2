@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://b2a7o0v3olomy"]
+
+[ext_resource type="Script" uid="uid://p7o6pm4kf2cn" path="res://Script/Main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://Map.tscn" id="2_map"]
+[ext_resource type="PackedScene" path="res://Player.tscn" id="3_player"]
+[ext_resource type="PackedScene" path="res://HUD.tscn" id="4_hud"]
+[ext_resource type="Script" path="res://Script/CameraController.gd" id="5_cam"]
+
+[node name="Main" type="Node2D" unique_id=1436527525]
+script = ExtResource("1_main")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=222646860]
+
+[node name="Map" parent="." unique_id=776921762 instance=ExtResource("2_map")]
+visible = false
+
+[node name="World" type="Node2D" parent="." unique_id=2074397969]
+y_sort_enabled = true
+
+[node name="Player" parent="World" unique_id=1681240243 instance=ExtResource("3_player")]
+position = Vector2(300, 1640)
+
+[node name="Camera" type="Camera2D" parent="." unique_id=2120636619]
+position = Vector2(300, 1640)
+script = ExtResource("5_cam")
+
+[node name="HUD" parent="." unique_id=691526712 instance=ExtResource("4_hud")]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=30591268]
